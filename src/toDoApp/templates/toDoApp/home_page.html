@@ -2,10 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="{% static 'toDoApp/css/home_page.css' %}">
 </head>
 <body>
-    <h1>Home page</h1>
+    <main>
+        <section class="container">
+            <div class="current">
+                <article>
+                    <h1>Current Tasks</h1>
+                    <a class="current-button" href="/task/">View</a>
+                </article>
+            </div>
+            <div class="complete">
+                <article>
+                    <h1>Completed Tasks</h1>
+                    <a class="complete-button" href="/past/">View</a>
+                </article>
+            </div>  
+        </section>
+    </main>
 </body>
 </html>

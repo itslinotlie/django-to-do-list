@@ -10,3 +10,10 @@ class Task(models.Model):
     # equivalent of toString
     def __str__(self):
         return "Goal: "+self.goal
+
+class CompletedTask(models.Model):
+    goal = models.CharField(max_length=100)
+    time_created = models.DateField()
+
+    def __str__(self):
+        return "Completed Goal: "+self.goal
